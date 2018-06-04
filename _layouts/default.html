@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -8,44 +19,178 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/itravel.github.io/style.css" />
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+    <!-- start banner Area -->
+    <section class="banner-area" id="home">
+      <!-- Start Header Area -->
+      <header class="default-header">
+        <nav class="navbar navbar-expand-lg  navbar-light">
+          <div class="container">
+              <a class="navbar-brand navbar-brandname" href="#">
+                <!-- <img src="img/logo.png" alt=" "> -->
+                iTravel
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="text-white lnr lnr-menu"></span>
+              </button>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+              <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+
+                <li><a href="#contact">Оставить заявку</a></li>
+                </ul>
+              </div>
           </div>
+        </nav>
+      </header>
+      <!-- End Header Area -->
+    </section>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+    <section class="default-banner active-blog-slider">
+        <div class="item-slider relative" style="background: url(img/slider1.jpg);background-size: cover;">
+          <div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+          <div class="container">
+            <div class="row fullscreen justify-content-center align-items-center">
+              <div class="col-md-10 col-12">
+                <div class="banner-content text-center">
+                  <h4 class="text-white mb-20 text-uppercase">Откройте для себя красочный мир</h4>
+                  <h1 class="text-uppercase text-white">Новое приключение</h1>
+                  <a href="#contact" class="text-uppercase header-btn">Открыть сейчас</a>
+                </div>
+              </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-slider relative" style="display: none; background: url(img/slider2.jpg);background-size: cover;">
+          <div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+          <div class="container">
+            <div class="row fullscreen justify-content-center align-items-center">
+              <div class="col-md-10 col-12">
+                <div class="banner-content text-center">
+                  <h4 class="text-white mb-20 text-uppercase">Откройте для себя красочный мир</h4>
+                  <h1 class="text-uppercase text-white">Новое путешествие</h1>
+                  <a href="#contact" class="text-uppercase header-btn">Открыть сейчас</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-slider relative" style="display: none; background: url(img/slider3.jpg);background-size: cover;">
+          <div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+          <div class="container">
+            <div class="row fullscreen justify-content-center align-items-center">
+              <div class="col-md-10 col-12">
+                <div class="banner-content text-center">
+                  <h4 class="text-white mb-20 text-uppercase">Откройте для себя красочный мир</h4>
+                  <h1 class="text-uppercase text-white">Новый опыт</h1>
+                  <a href="#contact" class="text-uppercase header-btn">Открыть сейчас</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="wrapper-footer">
+    <!-- Start feature Area -->
+    <section class="project-area section-gap" id="contact">
       <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature">
+              <div class="title d-flex flex-row pb-20 justify-content-center">
+                <span class="lnr lnr-map-marker"></span>
+                <h4>Посетите наш офис</h4>
+              </div>
+              <p class='text-center'>
+                г. Набережные Челны, <br>
+                пос. Чаллы Яр, <br>
+                ул. Портовая 41
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature">
+              <div class="title d-flex flex-row pb-20 justify-content-center">
+                <span class="lnr lnr-phone-handset"></span>
+                <h4><a href="#">Позвоните нам</a></h4>
+              </div>
+              <p class='text-center'>
+                <a href='callto:79600589206'>+7 (960) 058-92-06</a>
+                <i class='fab fa-whatsapp'></i>
+                <i class='fab fa-telegram'></i>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature">
+              <div class="title d-flex flex-row pb-20 justify-content-center">
+                <span class="lnr lnr-envelope"></span>
+                <h4><a href="#">Напишите нам</a></h4>
+              </div>
+              <p class='text-center'>
+                <a href='mailto:itravel502@mail.ru'>itravel502@mail.ru</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row" id='map' style="height: 400px">
+        </div>
       </div>
-    </div>
+    </section>
+    <!-- End feature Area -->
 
-    {% include analytics.html %}
+    <!-- start footer Area -->
+    <footer class="">
+      <div class="container">
+        <div class="row">
+          <div class='col-lg-8 col-md-8'>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <p class="footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="far fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </div>
+          <div class='col-lg-4 col-md-4'>
+            <div class="footer-text social-icons">
+              <p class="text-right">
+                <a href='https://vk.com/i_travel' target="blank" rel="nofollow"><i class="fab fa-2x fa-vk"></i></a>
+                &nbsp;
+                <a href='https://www.instagram.com/i__travel__/' target="blank" rel="nofollow"><i class="fab fa-2x fa-instagram"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer Area -->
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
+    <script>
+      DG.then(function() {
+        var map = DG.map('map', {
+          center: [55.728790, 52.358787],
+          zoom: 17
+        });
+        DG.marker([55.728950, 52.358687])
+          .addTo(map)
+          .bindLabel('Ты это, заходи если че');
+      });
+    </script>
   </body>
 </html>
